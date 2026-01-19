@@ -1,0 +1,55 @@
+/* Custom Styles & No-JS Logic */
+
+/* 1. No-JS Hamburger Menu Logic */
+/* By using the checkbox hack, we can toggle the menu without a single line of JavaScript */
+#menu-toggle:checked ~ #mobile-menu {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+/* 2. Custom Pulse Animation for the Hero Circle */
+@keyframes pulse-slow {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 4s infinite ease-in-out;
+}
+
+/* 3. Footer Background Fix */
+/* Ensures the footer background sticks to the bottom and covers correctly */
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+/* 4. Scrollbar Styling (Optional but adds polish) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1e0a2d; 
+}
+::-webkit-scrollbar-thumb {
+    background: #4c1d95; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6d28d9; 
+}
+
+/* 5. Specific Grid Alignment Helpers for "Why Choose" Section */
+/* While Tailwind handles the grid, these helper classes ensure the content 
+   inside the cards stays aligned visually if text length varies */
+.bg-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
