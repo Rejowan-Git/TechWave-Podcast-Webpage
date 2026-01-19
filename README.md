@@ -3,7 +3,7 @@
 A fully responsive, modern podcast landing page built with HTML and Tailwind CSS.
 
 ## 🚀 Live Demo
-[Click here to view the live website](LINK_TO_YOUR_GITHUB_PAGES_URL_HERE)
+[Click here to view the live website](https://rejowan-git.github.io/TechWave-Podcast-Webpage/)
 
 ## 🛠️ Tech Stack
 * **HTML5** (Semantic Structure)
